@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单工厂模式"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_abstract_factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="抽象工厂方法模式"
+        app:layout_constraintTop_toBottomOf="@id/btn_factory" />
+
+    <Button
+        android:id="@+id/btn_factoryThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简单工厂+线程池使用"
+        app:layout_constraintTop_toBottomOf="@id/btn_abstract_factory" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="倒计时:0"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_factoryThread" />
+
+
+    <Button
+        android:id="@+id/btn_factory3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="工厂单例封装线程池"
+        app:layout_constraintTop_toBottomOf="@id/tv_show" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
